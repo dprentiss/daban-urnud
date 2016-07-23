@@ -13,3 +13,7 @@ theta <- 2*pi*runif(n) - pi  # uniform azmuthal angles -pi to pi
 # convert cylindrical to cartesian coordinates
 y <- rw*cos(theta)
 z <- rw*sin(theta)
+
+cylPoints <- data.frame(x, y, z)
+surfPoints <- cylPoints[which(x^2 + y^2 + (z - ro)^2 <= ro^2),)]
+pointRatio = nrow(surfPoints)/nrow(cylPoints)
