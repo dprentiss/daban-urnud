@@ -1,9 +1,7 @@
 ro <- 0.5  # orb radius
 d <- sqrt(2) * ro  # orthogonal distance of orb centroid from axis of rotation
-#rw <- d - .1  # radius of water surface to axis of rotation, decision variable
+#rw <- d  # radius of water surface to axis of rotation, decision variable
 n <- 1000000  # sample size
-
-
 
 genPointSet <- function(ro, d, rw, n) {
   # generate uniform random cartesian points on the cylinder swept by water surface
@@ -11,7 +9,7 @@ genPointSet <- function(ro, d, rw, n) {
   
   # generate uniform cylindrical coordinates for fixed radius rw
   x <- ro * runif(n)  # uniform x coorditates, [0, ro]
-  theta <- pi * runif(n) - pi/2  # uniform azmuthal angles -pi/2 to pi/2, [-pi/2, pi/2]
+  theta <- pi * runif(n) - pi/2  # uniform azmuthal angles, [-pi/2, pi/2]
 
   # convert cylindrical to cartesian coordinates an populate data frame
   y <- rw*cos(theta)
