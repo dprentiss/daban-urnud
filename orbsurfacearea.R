@@ -1,7 +1,7 @@
 ro <- 0.5  # orb radius
 d <- sqrt(2) * ro  # orthogonal distance of orb centroid from axis of rotation
 #rw <- d - .1  # radius of water surface to axis of rotation, decision variable
-n <- 10000000  # sample size
+n <- 1000000  # sample size
 
 
 

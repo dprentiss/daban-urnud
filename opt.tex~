@@ -12,25 +12,19 @@
 
 \section{Water Level}
 
-\begin{quote}
-Blow a balloon out of steel, almost a mile wide, and fill it half full of water.
-Repeat three more times.
-Place these four orbs at the corners of a square, close to one another, but not quite touching.
-
---- Saunt Stephenson, \em{Anathem}
-\end{quote}
-\bigskip
-
-According to Saunt Stephenson, orbs on the Daban Urnud are half full of water.
-We will take some liberty with the notion of ''half full" to optimize the water level for various objectives that may be of interest to Geometers. 
+Orbs on the Daban Urnud are, as Fraa Stephenson suggests, "about half-way" full of water.
+We will take this ambiguity as an opportunity to optimize the water level for various objectives that may be of interest to Geometers. 
 
 \subsection{Surface Area}
 
 Consider an orb in the Daban Urnud with diameter $r_o$.
-Assume for our purposes that is perfectly spherical and ignore the thickness of the walls and any gaps between spheres.
-The centroid of the orb is coplanar with that of the three other orbs arranged in simple cubic packing such that the centroids comprise a square with sides of length $2r_o$. 
+Assume for our purposes that is perfectly spherical and ignore the thickness of the walls.
+Its centroid is coplanar with that three other orbs arranged in simple cubic packing such that the centroids comprise a square with sides of length $2r_o$. 
 Assume the rotational axis of the Daban Urnud's orbs is orthogonal to that plane and passes through the centroid of the implied square.
 As such the centroid of the orb will sweep out a circle with radius equal to it's distance from the axis which is $\sqrt{2}r_o$.
+
+
+
 
 \[
     \theta = \arccos \left(\frac{r_o^2+r_w^2}{2 \sqrt{2} r_o r_w}\right)
