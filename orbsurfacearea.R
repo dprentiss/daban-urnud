@@ -1,4 +1,4 @@
-ro <- 0.5  # orb radius
+ro <- 800  # orb radius
 d <- sqrt(2) * ro  # orthogonal distance of orb centroid from axis of rotation
 #rw <- d  # radius of water surface to axis of rotation, decision variable
 n <- 10000000  # sample size
@@ -28,10 +28,10 @@ genPointSet <- function(ro, d, rw, n) {
   return(c(rw, surfArea, n))
 }
 
-#for (r in seq(d-ro, d + ro, by=0.01)) {
+#for (r in seq(d-ro, d + ro, by=100)) {
 #  print(genPointSet(ro, d, r, n))
 #}
 
-for (r in seq(0.77, 0.8, by=0.005)) {
+for (r in seq(1241, 1281, by=5)) {
   print(genPointSet(ro, d, r, n))
 }
