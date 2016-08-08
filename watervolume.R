@@ -1,7 +1,11 @@
-ro <- 800  # orb radius
-rw <- 1264
-d <- sqrt(2) * ro  # orthogonal distance of orb centroid from axis of rotation
+ro <- 800  # orb radius (m)
+rw <- 1264  # (m)
+d <- sqrt(2) * ro  # orthogonal distance of orb centroid from axis of rotation (m)
 n <- 10000  # sample size
+g <- 9.80665  # standard acceleration on earth at sea level (m/S^2)
+
+#set angular velocity for std acceleration at rw
+omega <- sqrt(g/rw)  # (rad/s)
 
 genPointSet <- function(ro, d, rw, n) {
   # generate uniform random cartesian points on the cylinder interval swept by water
